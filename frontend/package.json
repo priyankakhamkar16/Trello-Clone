@@ -50,5 +50,5 @@
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   },
-  "proxy": "https://trello-clone-xi-one.vercel.app/"
+  "proxy": "https://trello-clone-chi-seven.vercel.app"
 }
