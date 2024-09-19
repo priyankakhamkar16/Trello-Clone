@@ -14,7 +14,7 @@ const BoardPage = () => {
 
   const fetchBoards = async () => {
     try {
-      const response = await fetch('https://trello-clone-xi-one.vercel.app/api/boards');
+      const response = await fetch('https://trello-clone-chi-seven.vercel.app/api/boards');
       const data = await response.json();
       setBoards(data);
     } catch (error) {
@@ -24,7 +24,7 @@ const BoardPage = () => {
 
   const fetchLists = async (boardId) => {
     try {
-      const response = await fetch(`https://trello-clone-xi-one.vercel.app/api/lists?boardId=${boardId}`);
+      const response = await fetch(`https://trello-clone-chi-seven.vercel.app/api/lists?boardId=${boardId}`);
       const data = await response.json();
       setLists(data);
     } catch (err) {
@@ -50,7 +50,7 @@ const BoardPage = () => {
     if (newListTitle.trim()) {
       const newList = { title: newListTitle, boardId: selectedBoardId };
       try {
-        const response = await fetch('https://trello-clone-xi-one.vercel.app/api/lists/add', {
+        const response = await fetch('https://trello-clone-chi-seven.vercel.app/api/lists/add', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ const BoardPage = () => {
     if (cardTitle.trim() && listId) {
       const newCard = { title: cardTitle, listId };
       try {
-        const response = await fetch('https://trello-clone-xi-one.vercel.app/api/cards/add', {
+        const response = await fetch('https://trello-clone-chi-seven.vercel.app/api/cards/add', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
