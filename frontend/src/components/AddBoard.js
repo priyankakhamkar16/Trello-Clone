@@ -8,7 +8,7 @@ const AddBoard = ({ onClose, onAddBoard }) => {
     e.preventDefault();
     if (boardName.trim()) {
       try {
-        const response = await fetch('https://trello-clone-xi-one.vercel.app/api/boards/add', {
+        const response = await fetch('https://trello-clone-chi-seven.vercel.app/api/boards/add', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ name: boardName }),
