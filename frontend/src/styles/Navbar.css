@@ -1,0 +1,46 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff; /* White background by default */
+  padding: 10px 20px;
+  color: #0079bf; /* Trello's primary blue color */
+  border-bottom: 1px solid #ddd; /* Light border for separation */
+}
+
+.navbar-board-page {
+  background-color: #000000; /* Black background for board page */
+  color: #ffffff; /* White text for the board page */
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo img {
+  height: 40px; /* Original height */
+  transform: scale(1.3); /* Scale the image to make it look bigger */
+}
+
+.navbar-actions {
+  display: flex;
+}
+
+.navbar-login {
+  color: #0079bf; /* Trello's primary blue color */
+  text-decoration: none;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.navbar-get-started {
+  background-color: #61bd4f; /* Trello's green */
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+
+.navbar-get-started:hover {
+  background-color: #48a63e; /* Slightly darker green */
+}

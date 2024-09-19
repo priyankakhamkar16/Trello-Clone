@@ -1,0 +1,292 @@
+/* Overall layout */
+.homepage {
+    background: linear-gradient(135deg, #8e16d9, rgb(255, 46, 74), #ee0167);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for the first section */
+.homepage-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 50px;
+    background-color: transparent;
+    margin-bottom: 50px;
+    box-shadow: none;
+}
+
+.homepage-left {
+    max-width: 50%;
+    color: white;
+}
+
+.homepage-right {
+    max-width: 50%;
+}
+
+.homepage-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.homepage-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.homepage-subtitle {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.homepage-heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.homepage-list {
+    font-size: 18px;
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 30px;
+}
+
+.homepage-list li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.homepage-list li::before {
+    content: '•';
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.homepage-signup {
+    display: flex;
+    align-items: center;
+}
+
+.homepage-email {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    width: 250px;
+}
+
+.homepage-signup-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4d17ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.homepage-signup-button:hover {
+    background-color: #030756;
+}
+
+/* Styles for the feature section */
+.homepage-feature-section {
+    background-color: white;
+    padding: 50px;
+    margin-top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homepage-feature-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.homepage-feature-button {
+    background-color: #e08be4;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.homepage-feature-button:hover {
+    background-color: #273cd8;
+}
+
+.homepage-feature-title {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.homepage-feature-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.homepage-feature-text {
+    max-width: 50%;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.homepage-feature-description {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding-left: 0;
+    margin: 0;
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.homepage-feature-description li {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.homepage-feature-description li strong {
+    font-weight: bold;
+    color: black;
+}
+
+.homepage-feature-image {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Styles for the about section */
+.homepage-about-section {
+    background-color: #f0f0f0;
+    padding: 50px;
+    width: 100%;
+}
+
+.homepage-about-content {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    justify-content: space-between;
+    margin-bottom: 20px; /* Reduced margin for less space between content blocks */
+    gap: 20px; /* Added gap between text and image */
+}
+
+.homepage-about-content.reverse {
+    flex-direction: row-reverse;
+}
+
+.homepage-about-text {
+    max-width: 50%;
+    text-align: left; /* Align text to the left */
+}
+
+.homepage-about-title {
+    font-size: 36px;
+    margin-bottom: 10px; /* Reduced space below the title */
+    color: #333;
+}
+
+.homepage-about-description {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6; /* Adjust line-height for better readability */
+}
+
+.homepage-about-image {
+    max-width: 35%;
+    height: auto;
+    border-radius: 10px;
+}
+/* Styles for the new sign-up section */
+.homepage-signup-section {
+    background: linear-gradient(rgb(2, 2, 116), rgb(76, 113, 248));
+    padding: 50px;
+    text-align: center;
+    color: white; /* White text color */
+}
+
+.homepage-signup-text {
+    font-size: 36px; /* Large text size */
+    margin-bottom: 20px; /* Space below the text */
+}
+
+.homepage-signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between input and button */
+}
+
+.homepage-signup-input {
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 300px; /* Width of the input field */
+}
+
+.homepage-signup-button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #4d17ff; /* Button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.homepage-signup-button:hover {
+    background-color: #030756; /* Darker shade on hover */
+}
+/* Styles for the logo section */
+.homepage-logo-section {
+    background-color: white; /* White background color */
+    padding: 50px;
+    text-align: center;
+}
+
+.homepage-logo-text {
+    font-size: 24px; /* Adjust size as needed */
+    margin-bottom: 30px; /* Space below the text */
+    color: #333; /* Text color */
+}
+
+.homepage-logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between logos */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.homepage-logo {
+    width: 100px; /* Adjust size of logos */
+    height: auto;
+}

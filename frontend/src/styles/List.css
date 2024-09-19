@@ -1,0 +1,61 @@
+.new-card-container {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  margin-top: 10px;
+  background-color: #e3f2fd; /* Light blue background */
+  border: 1px solid #90caf9; /* Light blue border */
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.new-card-container input {
+  border: 1px solid #ccc; /* Add border for visibility */
+  outline: none;
+  padding: 8px;
+  margin-bottom: 10px; /* Space below input */
+  border-radius: 4px;
+}
+
+.add-card-button {
+  padding: 8px 12px;
+  background-color: #0079bf; /* Trello blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 5px; /* Space below Add Card button */
+}
+
+.add-card-button:hover {
+  background-color: #005a8c; /* Darker blue on hover */
+}
+
+.cancel-button {
+  padding: 8px 12px;
+  background-color: #f44336; /* Red background for cancel */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 5px; /* Space above the cancel button */
+}
+
+.cancel-button:hover {
+  background-color: #c62828; /* Darker red on hover */
+}
+
+.card-container {
+  background-color: #ffffff; /* White background */
+  border-radius: 4px;
+  padding: 10px;
+  margin: 5px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: transform 0.2s;
+  border: 1px solid #e0e0e0; /* Light gray border */
+}
+
+.card-container:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+}

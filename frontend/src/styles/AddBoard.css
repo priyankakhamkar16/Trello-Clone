@@ -1,0 +1,60 @@
+/* src/styles/AddBoard.css */
+.add-board-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  width: 300px; /* Adjust width if needed */
+  height: auto; /* Auto-adjust based on content */
+  max-height: 80vh; /* Limit the maximum height */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds max-height */
+  text-align: center;
+}
+
+.add-board-modal h2 {
+  margin-bottom: 20px;
+}
+
+.add-board-modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the form elements */
+}
+
+.add-board-modal label {
+  margin-bottom: 10px;
+}
+
+.add-board-modal input {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.add-board-modal button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 14px;
+}
+
+.add-board-modal button[type="submit"] {
+  background: #0079bf;
+  color: #fff;
+}
+
+.add-board-modal .cancel-button {
+  background: #dfe1e6;
+}
+
+.add-board-modal button:hover {
+  opacity: 0.9;
+}

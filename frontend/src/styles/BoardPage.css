@@ -1,0 +1,118 @@
+/* Reset body and html margins and paddings */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Page container to include linear gradient background */
+.page-container {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(#000, #000, rgb(211, 106, 237), rgb(255, 198, 253), rgb(255, 157, 232));
+}
+
+/* Dashboard styles */
+.dashboard {
+  width: 250px;
+  background-color: #000; /* Black background for dashboard */
+  color: #fff;
+  height: 100vh; /* Full height of the viewport */
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto; /* Allow scrolling if necessary */
+  position: fixed; /* Fix the dashboard to the left side */
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+/* Dashboard title and menu styles */
+.dashboard-title {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.dashboard-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  color: #ccc;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dashboard-item:hover {
+  background-color: #444;
+  color: #fff;
+}
+
+.dashboard-icon {
+  font-size: 1.2em;
+  margin-right: 15px;
+}
+
+.dashboard-text {
+  font-size: 1em;
+}
+
+/* Main content area */
+.main-content {
+  flex-grow: 1;
+  padding: 20px;
+  margin-left: 250px; /* Leave space for the fixed dashboard */
+  background: linear-gradient(rgb(233, 79, 197), rgb(230, 141, 224), pink); /* Pink background */
+  box-sizing: border-box;
+  overflow: auto; /* Allows scrolling for the content */
+}
+
+/* Add Options Styles */
+.add-options {
+  margin-top: 20px; /* Add spacing from the Board */
+  display: flex;
+  justify-content: flex-start; /* Align to the left */
+}
+
+.add-list-button, .add-card-button {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background: #0079bf;
+  color: white;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.add-list-button:hover, .add-card-button:hover {
+  background: #005a8c; /* Darker shade on hover */
+}
+
+/* New list container */
+.new-list-container {
+  margin-top: 20px;
+}
+
+.board-item {
+  list-style-type: none; /* Removes the default list style */
+  cursor: pointer; /* Indicates that the item is clickable */
+  padding: 8px;
+  border: 1px solid #ccc; /* Optional: add border for better visibility */
+  margin-bottom: 5px; /* Space between items */
+  border-radius: 4px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background for better contrast */
+  color: black;
+}
+
+.board-item:hover {
+  background-color: #e0e0e0; /* Highlight on hover */
+}

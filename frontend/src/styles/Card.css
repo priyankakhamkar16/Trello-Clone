@@ -1,0 +1,13 @@
+.card-container {
+  background-color: #e9ecef; /* Light gray background for cards */
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s, transform 0.3s; /* Add transform for hover effect */
+}
+
+.card-container:hover {
+  background-color: #dee2e6; /* Darker gray on hover */
+  transform: translateY(-2px); /* Slightly lift on hover */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+}
